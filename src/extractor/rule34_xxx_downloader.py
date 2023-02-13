@@ -10,7 +10,7 @@ except:
 import sys
 from timee import sleep
 from constants import clean_url
-LIMIT = 100
+LIMIT = 200
 
 
 def get_tags(url):
@@ -106,7 +106,7 @@ def get_imgs(url, title=None, cw=None):
 
     imgs = []
     ids = set()
-    for p in range(500): #1017
+    for p in range(50000): #1017
         check_alive(cw)
         url = setPage(url, p)
         print_(url)
